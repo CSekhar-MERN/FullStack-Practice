@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <h2>Complete Contact form validation on Email</h2>
+
+    <section class="contact container-fluid" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form action="https://formspree.io/f/xvonjery" method="POST">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" id="name" required autocomplete="off" />
+          <input type="email" name="email" placeholder="Email Address " id="email" required autocomplete="off" />
+        </div>
+        <div class="input-box">
+          <input type="number" name="mobile" placeholder="Mobile Number" id="mobile" autocomplete="off" />
+          <input type="text" name="subject "placeholder="Email Subject" id="subject" autocomplete="off" />
+        </div>
+        <textarea name="textarea" id="message" cols="30" rows="10" placeholder="Your Message" autocomplete="off"></textarea>
+        <input type="submit" value="Send Message" class="btn" id="btn" />
+      </form>
+    </section>
+
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+      var btn = document.getElementById("btn");
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+        var message = document.getElementById("message").value;
+        var body = 'name: '+ name + '<br/> email: ' + email + '<br/> subject: ' + subject + '<br/> message: ' + message;
+
+        Email.send({
+          Host : "smtp.elasticemail.com",
+    Username : "ayushseghal321@gmail.com",
+    Password : "EDA6B5A42FD9A1E12DB0B8EFE381522BE4EB",
+          To:  "ayushseghal321@gmail.com",
+          From: email,
+          Subject: "contact subject",
+          Body: body,
+        }).then((message) => alert(message));
+      });
+    </script> -->
+  </body>
+
+</html>

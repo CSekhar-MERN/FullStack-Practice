@@ -1,0 +1,1 @@
+var prpt = prompt(enter the number)

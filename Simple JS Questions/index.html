@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        border: 2px solid;
+        height: 10vh;
+        width: 10vw;
+      }
+      /* #box1 {
+        background-color: white;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="box1"><h1>1</h1></div>
+    <div id="box2"><h1>2</h1></div>
+    <div id="box3"><h1>3</h1></div>
+    <div id="box4"><h1>4</h1></div>
+
+    <script>
+      const box1 = document.getElementById("box1");
+      const box2 = document.getElementById("box2");
+      const box3 = document.getElementById("box3");
+      const box4 = document.getElementById("box4");
+
+      box1.addEventListener("click", function () {
+        chgColor(box1);
+      });
+      box2.addEventListener("click", function () {
+        chgColor(box2);
+      });
+      box3.addEventListener("click", function () {
+        chgColor(box3);
+      });
+      box4.addEventListener("click", function () {
+        chgColor(box4);
+      });
+
+      function chgColor(bx) {
+        if (bx.style.backgroundColor === "white") {
+          bx.style.backgroundColor = "green";
+        } else {
+          bx.style.backgroundColor = "white";
+        }
+      }
+    </script>
+  </body>
+</html>

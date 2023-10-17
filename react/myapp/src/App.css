@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+nav{
+  background-color: aquamarine;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+  /* text-decoration: underline; */
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body{
+  background-color: #fcf9f4;
+}
+
+.container{
+  background-color: bisque;
+  width: 70%;
+  margin: auto;
+  min-height: 100vh;
+  padding: 4vmax 10vmax;
+  box-sizing: border-box;
+
+}
+
+.container h1{
+  text-align: center;
+  margin: 30px;
+  text-decoration: underline;
+}
+
+.container > form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,textarea,button{
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.212);
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.container > form >button{
+  width: 70%;
+  margin: auto;
+  font-weight: 500;
+cursor: pointer;
+}
+
+.container > form > button:hover{
+  background-color: rgb(45, 113, 139);
+  /* font-size: 15px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border-radius: 20px; */
+  transform: scale(1.1);
+}
+
+.task{
+  display: flex;
+  background-color: #fff;
+  margin: 40px ;
+  padding: 20px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.task > div{
+  width: 100%;
+}
+
+.task button {
+border-radius: 100%;
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.6rem;
+}
+
+.task span{
+  color: rgba(3, 3, 3, 0.534);
+}

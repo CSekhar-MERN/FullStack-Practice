@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <h2>Constructor</h2>
+    <p id="demo"></p>
+    <button onclick="carName()">My Cars</button>
+
+    <script>
+    class car{
+        constructor(name, year) {
+            this.name = name;
+            this.year = year
+        }
+    }
+    const car1 = new car('Fortuner', 2023)
+    const car2 = new car('Endavour', 2021)
+
+    function carName (){
+        document.getElementById('demo').innerHTML = `My SUV car is ${car1.name} model of ${car1.year} and second is ${car2.name} model of ${car2.year}`
+    }
+    </script>
+</body>
+</html>

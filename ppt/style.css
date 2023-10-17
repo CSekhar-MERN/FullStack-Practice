@@ -1,0 +1,27 @@
+body {
+  background-color: lightblue;
+}
+h1 {
+  color: red;
+  /* text-align: center; */
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+  background-color: aquamarine;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+    font-weight: 700;
+}
+
+button{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: transparent;
+    font-size: medium;
+    font-weight: 600;
+
+}

@@ -1,0 +1,26 @@
+
+h1{
+    color: blue;
+}
+#O{
+color: red;
+}
+#lO{
+    color: yellow;
+}
+#g{
+    color: blue;
+}
+#l{
+    color: green;
+}
+#e{
+    color: red;
+}
+
+form{
+    margin-left: 835px;
+}
+input{
+    border-radius: 10px;
+}

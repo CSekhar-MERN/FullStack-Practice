@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: grey;
+}
+
+.main{
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    min-height: 100vh;
+    padding: 100px 50px;
+    box-sizing: border-box;
+}
+
+.main h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#numOfwords{
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 5px;
+    outline: none;
+    font: 100 1.3rem sans-serif;
+    
+}
+button{
+    margin-left: 5px;
+    padding: 10px;
+    width: 15%;
+    height: 35px;
+    font: 100 2px sans-serif;
+    border-radius: 10px;
+    background-color: aquamarine;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(100, 214, 174);
+    transition: 0.5s;
+}
+ .paras{
+    background-color: rgb(238, 234, 234);
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+ }

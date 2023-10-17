@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jquery</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    p {
+      transition: 1.5s;
+    }
+    h1 {
+      background-color: aquamarine;
+      transition: 1.5s;
+    }
+    .h1s {
+      border: 2px solid rgb(172, 165, 165);
+      padding: 4vh;
+      border-radius: 10px;
+      border: 1px solid black;
+      margin: 20px 20px;
+      transition: 1.5s;
+    }
+    h2 {
+      background-color: blueviolet;
+      transition: 1.5s;
+    }
+
+    button {
+      margin-left: 50%;
+      transition: 1.5s;
+    }
+  </style>
+  <body>
+    <p>hello there</p>
+    <div class="main">
+      <h1 id="head">Hello this is h1</h1>
+      <h2 class="sub">hello this is h2</h2>
+      <button>Push Me</button>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script>
+
+    $(document).ready (()=>{
+
+        $("p").click();
+    $("h1").click();
+    $("h2").click();
+    const one = $("button").click();
+
+    const again = $("button").click(() => {
+      // $('button').html('<button class="btn">Again</button>');
+      $("button").text("Again");
+    });
+
+    $("p").click(() => {
+      console.log("you clicked");
+      $("p").hide();
+    });
+
+    $("button").click(() => {
+      $("h1").addClass("h1s");
+      $("h2").addClass("h1s");
+      $("p").hide();
+
+      $(again).click(() => {
+        $("h1").removeClass("h1s");
+        $("h2").removeClass("h1s");
+      });
+      if (again === true) {
+        $("button").remove(again);
+      } else {
+        console.log("good to go");
+      }
+    });
+    });
+    
+  </script>
+</html>

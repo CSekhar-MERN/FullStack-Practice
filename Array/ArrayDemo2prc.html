@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo2prctics</title>
+</head>
+<body>
+    <h2>Array demo2 practice</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <button onclick="callLoop()">Loop</button>
+    <button onclick="callForeach()">ForEach</button>
+
+    <script>
+        function callLoop() {
+            const fruits = ["Banana", "Orange", "Apple", "Mango" ,"Papaya"];
+            let fLen = fruits.length;
+            let head = "Name of Fruit";
+
+            let msg = `<h2> ${head} </h2>`;
+            document.getElementById('demo').innerHTML=msg;
+
+            let text = '<ul>';
+                for(let i = 0; i < fLen; i++){
+                    text +='<li>' + fruits[i] + '</li>';
+                }
+
+                text += '</ul>';
+
+                document.getElementById('demo1').innerHTML = text;
+        }
+
+        function callForeach(){
+            const fruits = ["Banana", "Orange", "Apple", "Mango" ,"Papaya"];
+
+            let text = '<ul>';
+                fruits.forEach(myFunction)
+                text += '</ul>'
+
+                function myFunction(value){
+                    text += '<li>' + value + '</li>'
+                }
+
+                document.getElementById('demo2').innerHTML=text;
+                document.getElementById('demo2').style.backgroundColor = 'pink';
+                document.getElementById('demo2').style.fontSize='30px';
+        }
+    </script>
+</body>
+</html>
